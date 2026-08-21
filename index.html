@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Waris & Sons Plastic - Recycled plastic granules and pellets including ABS, HIPS, GPPS and PP in Lahore, Pakistan.">
+
+  <title>Waris & Sons Plastic | Plastic Granules & Pellets</title>
+
+  <style>
+    :root {
+      --beige: #F5EBDD;
+      --beige-dark: #E9D9C0;
+      --cream: #FFFDF8;
+      --green: #2E7D32;
+      --green-dark: #1B4D2B;
+      --green-light: #E5F0E5;
+      --text: #26352C;
+      --muted: #687568;
+      --white: #FFFFFF;
+      --border: #E1D5C1;
+      --shadow: 0 15px 40px rgba(45, 70, 45, 0.10);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--beige);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* TOP BAR */
+
+    .topbar {
+      background: var(--green-dark);
+      color: #F5EBDD;
+      padding: 8px 0;
+      font-size: 13px;
+    }
+
+    .topbar-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* HEADER */
+
+    header {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-box {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: var(--green);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .logo-text strong {
+      display: block;
+      color: var(--green-dark);
+      font-size: 17px;
+    }
+
+    .logo-text span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+
+    .quote-button {
+      background: var(--green);
+      color: white !important;
+      padding: 12px 19px;
+      border-radius: 7px;
+    }
+
+    .quote-button:hover {
+      background: var(--green-dark);
+    }
+
+    .menu-button {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 27px;
+      cursor: pointer;
+      color: var(--green-dark);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 630px;
+      display: flex;
+      align-items: center;
+      color: white;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(27, 77, 43, 0.96),
+          rgba(27, 77, 43, 0.86),
+          rgba(27, 77, 43, 0.55)
+        ),
+        url("https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=1800")
+        center / cover;
+    }
+
+    .hero-content {
+      max-width: 730px;
+      padding: 80px 0;
+    }
+
+    .hero-label {
+      display: inline-block;
+      padding: 7px 13px;
+      border-radius: 30px;
+      border: 1px solid rgba(255,255,255,.35);
+      background: rgba(255,255,255,.10);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(43px, 6vw, 70px);
+      line-height: 1.04;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      color: #F4EBDD;
+      font-size: 18px;
+      max-width: 660px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: #236327;
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      border: 1px solid rgba(255,255,255,.55);
+      color: white;
+      background: transparent;
+    }
+
+    .button-outline:hover {
+      background: white;
+      color: var(--green-dark);
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-label {
+      color: var(--green);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      color: var(--green-dark);
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .section-text {
+      color: var(--muted);
+      max-width: 720px;
+      font-size: 16px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-box h3 {
+      color: var(--green-dark);
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .about-box p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 12px;
+      margin: 14px 0;
+      color: var(--text);
+    }
+
+    .feature strong {
+      color: var(--green);
+    }
+
+    /* PRODUCTS */
+
+    .products-section {
+      background: var(--beige-dark);
+    }
+
+    .products {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 28px;
+      transition: .2s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .product-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 14px;
+      background: var(--green-light);
+      color: var(--green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .product h3 {
+      color: var(--green-dark);
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .product p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .other-products {
+      margin-top: 25px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--green-dark);
+      color: white;
+    }
+
+    .cta-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: #E6DCC9;
+      max-width: 650px;
+    }
+
+    .cta .button-primary {
+      background: var(--green);
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-icon {
+      font-size: 22px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--green-dark);
+      margin-bottom: 3px;
+    }
+
+    .contact-item a,
+    .contact-item span {
+      color: var(--muted);
+    }
+
+    .contact-item a:hover {
+      color: var(--green);
+    }
+
+    .map {
+      width: 100%;
+      min-height: 380px;
+      border: 0;
+      border-radius: 17px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #143B24;
+      color: #D9DDCF;
+      padding: 35px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-title {
+      color: white;
+      font-weight: bold;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #2E7D32;
+      color: white;
+      padding: 13px 19px;
+      border-radius: 40px;
+      font-weight: bold;
+      box-shadow: 0 10px 30px rgba(0,0,0,.2);
+      z-index: 2000;
+    }
+
+    .whatsapp:hover {
+      background: #1B4D2B;
+    }
+
+    /* MOBILE */
+
+    @media(max-width: 900px) {
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: var(--cream);
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid var(--border);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .navbar > .quote-button {
+        display: none;
+      }
+
+      .about,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media(max-width: 550px) {
+
+      section {
+        padding: 70px 0;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 570px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .section-title {
+        font-size: 34px;
+      }
+
+      .cta h2 {
+        font-size: 32px;
+      }
+
+      .topbar-content {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .whatsapp {
+        right: 12px;
+        bottom: 12px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+  <div class="container topbar-content">
+
+    <span>
+      Sui Gas Road, Bund Road, Lahore, Punjab, Pakistan
+    </span>
+
+    <span>
+      0309 9664672 &nbsp; | &nbsp; 0317 4203355
+    </span>
+
+  </div>
+
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+
+      <div class="logo-box">
+        W
+      </div>
+
+      <div class="logo-text">
+
+        <strong>
+          WARIS & SONS PLASTIC
+        </strong>
+
+        <span>
+          Plastic Granules & Pellets
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <button
+      class="menu-button"
+      onclick="toggleMenu()"
+      aria-label="Open menu">
+
+      ☰
+
+    </button>
+
+
+    <nav id="nav">
+
+      <a href="#home">Home</a>
+
+      <a href="#about">About Us</a>
+
+      <a href="#products">Products</a>
+
+      <a href="#contact">Contact Us</a>
+
+    </nav>
+
+
+    <a
+      href="#contact"
+      class="quote-button">
+
+      Get a Quote
+
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <span class="hero-label">
+
+        RECYCLED PLASTIC GRANULES & PELLETS
+        • LAHORE, PAKISTAN
+
+      </span>
+
+
+      <h1>
+
+        Quality Plastic Materials for Industry.
+
+      </h1>
+
+
+      <p>
+
+        Waris & Sons Plastic collects and processes
+        plastic waste into reusable granules and pellets,
+        including ABS, HIPS, GPPS, PP and other plastic
+        materials.
+
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="#products"
+          class="button button-primary">
+
+          View Products
+
+        </a>
+
+
+        <a
+          href="https://wa.me/923099664672?text=Hello%20Waris%20%26%20Sons%20Plastic%2C%20I%20would%20like%20to%20ask%20about%20your%20plastic%20granules."
+          target="_blank"
+          class="button button-outline">
+
+          WhatsApp Us
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="container about">
+
+
+    <div>
+
+      <div class="section-label">
+        About Us
+      </div>
+
+
+      <h2 class="section-title">
+
+        Turning plastic waste into reusable raw material.
+
+      </h2>
+
+
+      <p class="section-text">
+
+        Waris & Sons Plastic is based in Lahore, Pakistan.
+        We collect plastic waste, process it and produce
+        recycled plastic granules and pellets for reuse
+        in manufacturing.
+
+      </p>
+
+
+      <br>
+
+
+      <div class="feature">
+
+        <strong>✓</strong>
+
+        <span>
+          Recycled plastic materials for industrial applications
+        </span>
+
+      </div>
+
+
+      <div class="feature">
+
+        <strong>✓</strong>
+
+        <span>
+          ABS, HIPS, GPPS, PP and other plastic materials
+        </span>
+
+      </div>
+
+
+      <div class="feature">
+
+        <strong>✓</strong>
+
+        <span>
+          Based in Lahore, Punjab, Pakistan
+        </span>
+
+      </div>
+
+
+      <div class="feature">
+
+        <strong>✓</strong>
+
+        <span>
+          Direct contact for product availability and quotations
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="about-box">
+
+      <h3>
+
+        A practical source for recycled plastic materials.
+
+      </h3>
+
+
+      <p>
+
+        Our focus is on recovering value from plastic waste
+        and converting it into granules and pellets that
+        can be reused as raw material.
+
+      </p>
+
+
+      <p>
+
+        Contact us to discuss the material, grade, color
+        and quantity you require.
+
+      </p>
+
+
+      <a
+        href="#contact"
+        class="button button-primary">
+
+        Contact Our Team
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section
+  class="products-section"
+  id="products">
+
+  <div class="container">
+
+
+    <div class="section-label">
+      Our Products
+    </div>
+
+
+    <h2 class="section-title">
+
+      Plastic granules for different applications.
+
+    </h2>
+
+
+    <p class="section-text">
+
+      We deal in a range of recycled plastic materials.
+      Availability, grade, color and specifications can
+      be discussed directly with our team.
+
+    </p>
+
+
+    <div class="products">
+
+
+      <div class="product">
+
+        <div class="product-icon">
+          A
+        </div>
+
+        <h3>
+          ABS
+        </h3>
+
+        <p>
+
+          Recycled ABS granules for suitable industrial
+          and manufacturing applications.
+
+        </p>
+
+      </div>
+
+
+      <div class="product">
+
+        <div class="product-icon">
+          H
+        </div>
+
+        <h3>
+          HIPS
+        </h3>
+
+        <p>
+
+          High-impact polystyrene granules supplied
+          according to available grades and requirements.
+
+        </p>
+
+      </div>
+
+
+      <div class="product">
+
+        <div class="product-icon">
+          G
+        </div>
+
+        <h3>
+          GPPS
+        </h3>
+
+        <p>
+
+          General-purpose polystyrene granules for
+          manufacturing and processing applications.
+
+        </p>
+
+      </div>
+
+
+      <div class="product">
+
+        <div class="product-icon">
+          P
+        </div>
+
+        <h3>
+          PP
+        </h3>
+
+        <p>
+
+          Recycled polypropylene granules available
+          for a variety of industrial uses.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <p class="other-products">
+
+      <strong>
+        Looking for another material?
+      </strong>
+
+      Contact us about other plastic granules and pellets.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container cta-content">
+
+
+    <div>
+
+      <h2>
+
+        Looking for recycled plastic granules?
+
+      </h2>
+
+
+      <p>
+
+        Tell us what material and quantity you need.
+        Our team can discuss available products and
+        provide a quotation.
+
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <a
+        href="https://wa.me/923099664672?text=Hello%20Waris%20%26%20Sons%20Plastic%2C%20I%20would%20like%20a%20quotation."
+        target="_blank"
+        class="button button-primary">
+
+        Request on WhatsApp
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="container">
+
+
+    <div class="section-label">
+      Contact Us
+    </div>
+
+
+    <h2 class="section-title">
+
+      Let's discuss your requirements.
+
+    </h2>
+
+
+    <p class="section-text">
+
+      Reach Waris & Sons Plastic in Lahore for product
+      inquiries and quotations.
+
+    </p>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card">
+
+
+        <div class="contact-item">
+
+          <div class="contact-icon">
+            📍
+          </div>
+
+          <div>
+
+            <strong>
+              Address
+            </strong>
+
+            <span>
+
+              Sui Gas Road, Bund Road,
+              Lahore, Punjab, Pakistan
+
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="contact-icon">
+            📞
+          </div>
+
+          <div>
+
+            <strong>
+              Phone
+            </strong>
+
+            <a href="tel:+923099664672">
+
+              0309 9664672
+
+            </a>
+
+            <br>
+
+            <a href="tel:+923174203355">
+
+              0317 4203355
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="contact-icon">
+            ✉️
+          </div>
+
+          <div>
+
+            <strong>
+              Email
+            </strong>
+
+            <a href="mailto:info@warisandsonsplastic.com">
+
+              info@warisandsonsplastic.com
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="contact-icon">
+            💬
+          </div>
+
+          <div>
+
+            <strong>
+              WhatsApp
+            </strong>
+
+            <a
+              href="https://wa.me/923099664672"
+              target="_blank">
+
+              Chat with us on WhatsApp
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <iframe
+        class="map"
+        src="https://www.google.com/maps?q=Sui%20Gas%20Road%2C%20Bund%20Road%2C%20Lahore%2C%20Punjab%2C%20Pakistan&output=embed"
+        loading="lazy"
+        title="Waris & Sons Plastic location">
+      </iframe>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHATSAPP BUTTON -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/923099664672?text=Hello%20Waris%20%26%20Sons%20Plastic"
+  target="_blank">
+
+  💬 WhatsApp
+
+</a>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container footer-content">
+
+
+    <div>
+
+      <div class="footer-title">
+
+        Waris & Sons Plastic
+
+      </div>
+
+      <div>
+
+        Recycled Plastic Granules & Pellets
+
+      </div>
+
+    </div>
+
+
+    <div>
+
+      © <span id="year"></span>
+      Waris & Sons Plastic.
+      All rights reserved.
+
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  function toggleMenu() {
+
+    document
+      .getElementById("nav")
+      .classList.toggle("active");
+
+  }
+
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
