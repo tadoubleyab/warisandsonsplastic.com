@@ -447,6 +447,49 @@
       border-radius: 17px;
     }
 
+    .map-card {
+      width: 100%;
+      min-height: 380px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(245,235,221,.82), rgba(245,235,221,.82)),
+        repeating-linear-gradient(
+          45deg,
+          #E9D9C0,
+          #E9D9C0 10px,
+          #F5EBDD 10px,
+          #F5EBDD 20px
+        );
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .map-placeholder {
+      padding: 40px 25px;
+      max-width: 430px;
+    }
+
+    .map-pin {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+
+    .map-placeholder h3 {
+      color: var(--green-dark);
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .map-placeholder p {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
     /* FOOTER */
 
     footer {
@@ -1065,6 +1108,13 @@
 
               Sui Gas Road, Bund Road,
               Lahore, Punjab, Pakistan
+              <br>
+              <a
+                href="https://maps.app.goo.gl/gu9AxqJ2szrvMwBn7"
+                target="_blank"
+                rel="noopener noreferrer">
+                Find Us on Google Maps
+              </a>
 
             </span>
 
